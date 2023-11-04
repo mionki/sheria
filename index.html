@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <title>Sheria Search</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="sheria search logo.png" alt="sheria" id="sheria" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+              <li><a class="dropdown-item" href="#">Feature 1</a></li>
+              <li><a class="dropdown-item" href="#">Feature 2</a></li>
+              <li><a class="dropdown-item" href="#">Feature 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn">Talk to us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="#">Watch a Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div style="height: 20px"></div> -->
+  <div class="container">
+    <div class="divided-row">
+      <div class="text-side">
+        <h2 class="h21">
+          Legal research made <span class="green-text">Faster</span> and
+          <span class="green-text">Simple</span>
+        </h2>
+        <p class="p1">
+          we build a platform that understands the meaning of your legal query
+          and quickly finds the most recent and relevant cases.
+        </p>
+        <button id="demo" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Show Video Demo</button>
+        <!-- The modal -->
+          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sheria Search</h5>
+                        <button type="button" class="close" data-dismiss="modal" onclick="refreshPage()">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <video width="100%" controls>
+                            <source src="WhatsApp Video 2023-09-30 at 08.13.27_ec08cda9.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+
+        <button class="btn btn-primary " id="openModalButton">SIGN UP FOR BETA</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <!-- Your modal content here -->
+              <script type="text/javascript" src="https://form.jotform.com/jsform/232803852192052"></script>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="image-side">
+        <video class="responsive-video" controls>
+          <source src="gifsheria.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <!-- Another div element with h2 tag below the container -->
+  <div class="container custom-margin-top text-center">
+    <h2>Explore Our Trailblazing<span class="green-text"> features</span></h2>
+    <div class="custom-paragraph features">
+      <p>
+        Introducing our innovative AI-powered legal research tool that
+        revolutionizes the way legal practitioners conduct their research. Our
+        product combines the power of AI technology and semantic search to
+        provide faster and more accurate results.
+      </p>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row feature">
+      <div class="col-md-3 feature">
+        <div class="text-center">
+          <img src="research.png" class="my_icons" alt="Custom Icon" />
+          <h4 class="iconh">Meaning based search</h4>
+          <p>
+            Search for relevant precedents based on the intended meaning
+            rather than solely on specific keywords.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 feature">
+        <div class="text-center">
+          <img src="add-friend.png" class="my_icons" alt="Custom Icon" />
+          <h4 class="iconh">User-friendly</h4>
+          <p>
+            A user-friendly inteface that is intuitive and easy to navigate.
+            Anyone can quickly adapt and use our tool effectively.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 feature">
+        <div class="text-center">
+          <img src="deadline.png" class="my_icons" alt="Custom Icon" />
+          <h4 class="iconh">Faster more accurate</h4>
+          <p>
+            Speed up the research process. You can quickly find relevant and
+            legal precedents and save valuable time while enhancing the
+            accuracy of the results.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-3 feature">
+        <div class="text-center">
+          <img src="time-to-market.png" class="my_icons" alt="Custom Icon" />
+          <h4 class="iconh">Increased productivity</h4>
+          <p>
+            Streamline the research process & spend less time researching for
+            information & more time analyzing and applying their findings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pricing -->
+  <!-- <div class="container pricing">
+      <div class="top">
+        <h1>Plans & Pricing</h1>
+        <div class="toggle-btn">
+          <span style="margin: 0.8em">Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="checkbox" onclick="check();" />
+            <span class="slider round"></span>
+          </label>
+          <span style="margin: 0.8em">Annually</span>
+        </div>
+
+        <div class="package-container">
+          <div class="packages">
+            <h1>Basic</h1>
+            <h2 class="text1">&dollar;99.99</h2>
+            <h2 class="text2">&dollar;999.99</h2>
+            <ul class="list">
+              <li class="first">All analytics features </li>
+              <li>Up to 250,000 tracked visits</li>
+              <li>Normal Support</li>
+              <li>Mobile App</li>
+              <li>Up to 3 team members</li>
+            </ul>
+            <a href="#" class="button button1">Get Started</a>
+          </div>
+
+        
+        <div class="packages">
+          <h1>Growth</h1>
+          <h2 class="text1">&dollar;199.99</h2>
+          <h2 class="text2">&dollar;1,999.99</h2>
+          <ul class="list">
+            <li class="first">Everything on basic plan</li>
+            <li>Up to 1,000,000 tracked visits</li>
+            <li>Premium support</li>
+            <li>Mobile app</li>
+            <li>Up to 10 team members</li>
+          </ul>
+          <a href="#" class="button button2">Get Started</a>
+        </div>
+        <div class="packages">
+          <h1>Enterprise</h1>
+          <h2 class="text1">&dollar;399.99</h2>
+          <h2 class="text2">&dollar;3,999.99</h2>
+          <ul class="list">
+            <li class="first">Everything on Growth plan</li>
+            <li>Up to 5,000,000 tracked visits</li>
+            <li>Dedicated Support</li>
+            <li>Facebook Ads</li>
+            <li>Mobile App</li>
+            <li>Up to 50 team members</li>
+          </ul>
+          <a href="#" class="button button3">Get Started</a>
+        </div>
+      </div>
+    </div> -->
+  <!-- pricing -->
+  <!-- Divided row with contact us form -->
+  <div class="container mt-5">
+    <div class="divided-row feature">
+      <div class="text-side contact-form-side">
+        <div class="contact-form-container p-3 black-border">
+          <form>
+            <div class="mb-2">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+            <div class="mb-2">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" />
+            </div>
+            <div class="mb-2">
+              <label for="Phone Number" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="phone_number" name="phone_number" />
+            </div>
+            <div class="mb-2">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-center feature mt-4 contact-info-side " id="intouch">
+        <h2>Contact Us</h2>
+        <h2>Get in Touch Today!</h2>
+        <p>
+          Have questions or feedback? We'd love to hear from you. 
+          Get in touch with us today, and let's embark on this legal 
+          research revolution together.
+        </p>
+        <p><i class="fas fa-envelope"></i> Email: info@sheriasearch.co.ke</p>
+        <p><i class="fas fa-phone"></i> Phone: +254753223421</p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: Nairobi, Kenya</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="background-color: #f5f5f5">
+    <div class="container">
+      <div class="row feature">
+        <!-- About Us -->
+        <div class="col-md-4">
+          <h3>About Us</h3>
+          <p>At Sheria Search, we are passionate about transforming the way legal research is conducted. 
+            Our journey began with a simple yet powerful idea: to make legal research faster, simpler, 
+            and more accessible to everyone.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Our Mission</h3>
+          <p>Our mission is clear to empower legal professionals, scholars, and individuals with a 
+            groundbreaking AI-powered platform that revolutionizes the Legal research process. 
+            We believe that understanding the law should be intuitive, efficient, and accurate, 
+            and that's precisely what we deliver.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4">
+          <h3>Quick Links</h3>
+          <ul style="list-style: none; padding: 0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <!-- <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <address>
+            123 Main Street<br />
+            City, State ZIP<br />
+            Email: info@example.com<br />
+            Phone: (123) 456-7890
+          </address>
+        </div> -->
+
+        <!-- Follow Us -->
+
+        <div class="col-md-4 order-md-last">
+          <h3 class="text-center">Follow Us</h3>
+          <div class="social-media d-flex justify-content">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Newsletter Subscription -->
+        <!-- <div class="col-md-4">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form class="subscribe-form">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" style="width: 100%;" placeholder="Enter your email" aria-label="Email" aria-describedby="subscribe-btn">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="subscribe-btn">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div> -->
+
+        <!-- Company Logo and Copyright -->
+        <div class="col-md-4">
+          <img src="sheria search logo.png" alt="sheria" id="sheria" />
+          <p>&copy; 2023 Sheria Search. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/742b4de85d.js" crossorigin="anonymous"></script>
+<!-- Link to Bootstrap 4 JavaScript and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  // Wait for the DOM to be fully loaded
+  $(document).ready(function () {
+    // When the button with ID "demo" is clicked, show the video modal
+    $("#demo").click(function () {
+      $("#videoModal").modal("show");
+    });
+  });
+  function refreshPage() {
+    // Reload the current page
+    location.reload();
+  }
+</script>
+<script>
+  // JavaScript to open the modal when the button is clicked
+  $(document).ready(function () {
+    $("#openModalButton").click(function () {
+      $("#myModal").modal("show");
+    });
+  });
+</script>
+
+</html>

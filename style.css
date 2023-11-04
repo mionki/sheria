@@ -1,0 +1,718 @@
+/* Custom CSS for spacing between right-aligned navbar items */
+.navbar-nav.right-aligned .nav-item {
+  margin-left: 25px;
+  /* Adjust the spacing as needed */
+}
+
+.navbar .nav-link.btn {
+  border: 1px solid #2d639cd4;
+  /* Adjust border color and size as needed */
+  border-radius: 20px;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#demo {
+  background-color: rgba(102,
+      223,
+      242,
+      0.812);
+  /* Adjust background color as needed */
+  color: #060505;
+  /* Adjust text color as needed */
+  border-radius: 20px;
+}
+
+#talk {
+  border: 1px solid #2d639cd4;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  /* Make the button background clear */
+  color: #2d639cd4;
+  /* Use the same color for text as the border */
+}
+
+#sheria {
+  width: 250px;
+  height: auto;
+  max-height: 150px;
+  display: block;
+}
+
+/* Custom CSS for divided row */
+.divided-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  /* Adjust margin as needed */
+  padding: 30px;
+  /* Adjust padding as needed */
+}
+
+/* Custom CSS for text side */
+.text-side {
+  flex-basis: 40%;
+  /* Adjust width of text side */
+  font-weight: 500;
+}
+
+/* Custom CSS for image side */
+.image-side {
+  flex-basis: 35%;
+  /* Adjust width of image side */
+  text-align: center;
+  margin-top: -30px;
+}
+
+.h21 {
+  font-size: 40px;
+}
+
+/* Custom CSS for green text */
+.green-text {
+  color: #204487;
+  /* Change text color to green */
+  font-weight: bold;
+  /* Add bold font-weight */
+}
+
+.p1 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn-spacing {
+  margin-right: 20px;
+  /* Adjust spacing as needed */
+}
+
+.custom-margin-top {
+  margin-top: 100px;
+  /* Adjust the margin as needed */
+}
+
+/* Default margins for larger screens */
+.custom-paragraph {
+  margin-left: 120px !important;
+  /* Adjust left margin as needed */
+  margin-right: 120px !important;
+  /* Adjust right margin as needed */
+}
+
+/* Media query for screens smaller than 768px (typical mobile) */
+@media (max-width: 768px) {
+  .custom-paragraph {
+    margin-left: 0 !important;
+    /* Remove left margin for mobile screens */
+    margin-right: 0 !important;
+    /* Remove right margin for mobile screens */
+    text-align: center;
+    /* Center-align the text */
+  }
+}
+
+/* pricing */
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+.container {
+  width: 100%;
+}
+
+.packages {
+  margin: 20px;
+  width: 300px;
+  padding-bottom: 1.5em;
+  height: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+  flex-wrap: wrap;
+  color: #1e0d6a;
+}
+
+h1,
+h2 {
+  font-size: 2.2em;
+}
+
+.list li {
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 1px solid #f4f4f4;
+  padding-inline-start: 0;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.first {
+  margin-top: 40px;
+  border-top: 1px solid #f4f4f4;
+}
+
+.list {
+  width: 80%;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+
+.button {
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin: 15px 15px;
+  border-radius: 50px;
+  color: #f4f4f4;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button1 {
+  background-color: #1e0d6a;
+  /* box-shadow: 0 0 10px 0 #101615 inset, 0 0 20px 2px #101615; */
+}
+
+.button2 {
+  background-color: #1e0d6a;
+  /* box-shadow: 0 0 10px 0 #101615 inset, 0 0 20px 2px #101615; */
+}
+
+.button3 {
+  background-color: #1e0d6a;
+  /* box-shadow: 0 0 10px 0 #101615 inset, 0 0 20px 2px #101615; */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e2321;
+  -webkit-transition: 0.4s;
+
+  box-shadow: 2px 6px 25px #1e2321;
+  transform: translate(0px, 0px);
+  transition: 0.6s ease transform, 0.6s box-shadow;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #50bfe6;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #50bfe6;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.package-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* pricing */
+#intouch {
+  margin-top: 100px;
+  /* Adjust the margin-top value as needed */
+  margin-bottom: 40px;
+  /* Add margin-bottom for spacing between sections */
+  padding: 30px;
+}
+
+.black-border {
+  border: 1px solid rgba(38, 38, 38, 0.807);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.footer-container {
+  margin-top: 100px;
+}
+
+.MacBook_Pro_16 {
+  /* position: absolute; */
+  width: 600px;
+  height: 700px;
+  left: 658.02px;
+  top: 50px;
+}
+
+/* Ellipse 8 */
+.my_icons {
+  /* position: absolute; */
+  width: 80px;
+  height: 100px;
+  /* left: 227px; */
+  /* top: 632px; */
+  /* background: linear-gradient(140.16deg, rgba(11, 80, 207, 0.017) 2.36%, rgba(55, 181, 255, 0.0952) 39.81%, rgba(60, 202, 176, 0.0532) 77.26%); */
+}
+
+.pricing {
+  margin-top: 70px;
+}
+
+.iconh {
+  color: #50bfe6;
+}
+
+.list {
+  list-style: url("checked.png");
+  /* Specify the correct path to your tick icon image */
+  padding-left: 0;
+  /* Reset the default padding */
+}
+
+/* Style for the first list item */
+.list .first {
+  margin-top: 0;
+  /* Remove top margin for the first list item */
+}
+
+.packages {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Add the following line to set a fixed height */
+  height: 650px;
+  /* Adjust the height as needed */
+}
+
+.divided-row {
+  display: flex;
+  align-items: stretch;
+  /* This makes both sides stretch to equal height */
+}
+
+.contact-form-side {
+  flex: 1;
+  /* This makes the form side take up equal space */
+}
+
+.contact-info-side {
+  flex: 1;
+  /* This makes the contact info side take up equal space */
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 8px;
+  /* Add margin to create spacing between icons */
+}
+
+.subscribe-form .form-control {
+  height: 40px;
+  /* Adjust the height as needed */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal {
+  z-index: 1050;
+  /* Adjust this value as needed */
+}
+
+.overlay-element {
+  opacity: 0;
+  /* Make it transparent */
+  pointer-events: none;
+  /* Allow clicks to pass through */
+}
+
+/* Customize modal header */
+.modal-header {
+  background-color: #101cc093;
+  /* Change the background color */
+  color: #fff;
+  /* Change the text color */
+}
+
+/* Customize modal title */
+.modal-title {
+  font-size: 26px;
+  /* Change the font size */
+}
+
+/* Customize modal body */
+.modal-body {
+  padding: 20px;
+  /* Change the padding */
+  font-size: 16px;
+  /* Change the font size */
+}
+
+/* Customize modal footer */
+.modal-footer {
+  background-color: #f8f9fa;
+  /* Change the background color */
+}
+
+/* Customize buttons within the modal */
+.btn-primary {
+  border: 1px solid #2d639cd4;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  /* Make the button background clear */
+  color: #2d639cd4;
+  /* Use the same color for text as the border */
+}
+
+.btn-secondary {
+  border: 1px solid #2d639cd4;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  /* Make the button background clear */
+  color: #e92f2fd4;
+  /* Use the same color for text as the border */
+}
+
+/* Customize the modal overlay background */
+.modal-backdrop {
+  background-color: rgba(0,
+      0,
+      0,
+      0.5);
+  /* Change the overlay background color and transparency */
+}
+
+.modal-backdrop.show {
+  display: none !important;
+}
+
+/* Customize the modal content */
+.modal-content {
+  border-radius: 10px;
+  /* Add rounded corners to the modal */
+}
+
+.container {
+  max-width: 100%;
+  /* Ensures the container doesn't exceed the screen width */
+  padding: 0px;
+  /* Add padding or margin as needed */
+  box-sizing: border-box;
+  /* Ensures padding and border don't increase the container's width */
+}
+
+.p1 {
+  margin-top: 20px;
+  /* Adjust margin for larger screens */
+}
+
+/* Default styling for larger screens */
+.divided-row {
+  display: flex;
+  justify-content: space-between;
+  /* Other styling properties for the divided layout */
+}
+
+/* Default video dimensions for larger screens */
+.responsive-video {
+  width: 620px;
+  height: 340px;
+}
+
+/* Default styles for larger screens */
+.custom-margin-top {
+  margin-top: 20px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile) */
+@media (max-width: 768px) {
+  .p1 {
+    margin-top: 10px;
+    /* Reduce margin for smaller screens */
+  }
+  .image-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .responsive-video {
+    max-width: 100%;
+    height: auto;
+  }
+  .button-container {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  .h21 {
+    font-size: 20px;
+    /* Reduce font size for smaller screens */
+  }
+
+  .container {
+    padding: 1px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .h21 {
+    font-size: 24px;
+    /* Adjust font size for larger screens */
+  }
+
+  .divided-row {
+    display: flex;
+    flex-direction: column;
+    
+    /* Make it a single column for mobile */
+  }
+  .image-side {
+    order: 2;
+  }
+  .text-side {
+    padding-bottom: 70px;
+    order: 1;
+  }
+  .modal-dialog h4 {
+    font-size: 16px;
+  }
+
+  .feature {
+    padding: 0%;
+    max-width: 100%;
+    margin: 0%;
+  }
+
+  .responsive-video {
+    width: 100%;
+    /* Make the video full width on mobile */
+    height: auto;
+    /* Allow the height to adjust proportionally */
+    /* margin-top: 50px; */
+  }
+
+  .custom-margin-top {
+    margin-top: 10px;
+    /* Reduce margin for smaller screens */
+  }
+
+  .contact-info-side {
+    padding: 0%;
+    margin: 0%;
+  }
+
+  h2 {
+    font-size: 24px;
+    /* Adjust font size for larger screens */
+  }
+
+  .custom-paragraph {
+    padding: 0;
+    /* Remove padding for mobile screens */
+    /* text-align: center; Center-align the text */
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .custom-paragraph p {
+    font-size: 20px;
+    /* Adjust font size for larger screens */
+    /* font-weight: 200; */
+    max-width: 100%;
+    /* Make sure the text spans the full width */
+    margin: 0px;
+  }
+
+  .my_icons {
+    max-width: 80px;
+    /* Adjust icon size for smaller screens */
+  }
+
+  .iconh {
+    font-size: 18px;
+    /* Adjust font size for larger screens */
+  }
+
+  .social-media {
+    flex-wrap: nowrap;
+    /* Prevent icon wrapping to the next line */
+  }
+
+  .social-icon {
+    margin: 0 5px;
+    /* Add margin between icons for spacing */
+  }
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-md-4 .social-media {
+  margin-top: auto;
+}
+
+/* .feature{
+  padding: 0%;
+  max-width: 100%;
+  margin: 0%;
+} */
+
+/* Adjust the modal width and center it on small screens */
+@media (max-width: 576px) {
+  .modal-lg {
+    max-width: 90%;
+  }
+
+  .modal-dialog {
+    margin: 10% auto;
+    max-width: 90%;
+  }
+  .modal-title{
+    font-size: 14px;
+  }
+  .modal-content {
+    max-height: 90vh; /* Set the maximum height to 70% of the viewport height */
+  }
+  
+}
+
+/* Adjust the modal width and center it on medium screens */
+@media (max-width: 768px) {
+  .modal-lg {
+    max-width: 70%;
+  }
+.modal-content{
+  max-height: 90vh;   
+  min-width: 250px;
+  padding: 0%;
+}
+  .modal-dialog {
+    margin: 10% auto;
+    max-width: 70%;
+  }
+  .modal-title{
+    font-size: 14px;
+  }
+  .modal-content {
+    max-height: 80vh; /* Set the maximum height to 70% of the viewport height */
+  }
+}
+
+/* Adjust the modal width and center it on large screens */
+@media (min-width: 769px) {
+  .modal-lg {
+    max-width: 60%;
+  }
+
+  .modal-dialog {
+    margin: 10% auto;
+    max-width: 60%;
+  }
+  .modal-title{
+    font-size: 14px;
+  }
+  .modal-content {
+    max-height: 90vh; /* Set the maximum height to 70% of the viewport height */
+  }
+}
+
